@@ -799,6 +799,183 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C_Polarized"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Polarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Library_original:BMP280module"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2658,6 +2835,18 @@
 		)
 		(uuid "36e2c557-2c2a-4fba-9b6f-1167ab8ec281")
 	)
+	(junction
+		(at 130.81 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "44be8862-7ad4-43e6-98c2-1cc845887dcb")
+	)
+	(junction
+		(at 130.81 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a76c937e-dbd9-4786-8166-cf13c9591972")
+	)
 	(no_connect
 		(at 90.17 62.23)
 		(uuid "0161d227-9f88-4a33-bcf6-8c77a086e710")
@@ -2800,7 +2989,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 142.24) (xy 130.81 154.94)
+			(xy 130.81 142.24) (xy 130.81 148.59)
 		)
 		(stroke
 			(width 0)
@@ -2817,6 +3006,16 @@
 			(type default)
 		)
 		(uuid "08435100-20ac-4071-b2bd-7ac277bb0259")
+	)
+	(wire
+		(pts
+			(xy 124.46 148.59) (xy 130.81 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e0598db-c6f6-4bbf-935c-f2937388be93")
 	)
 	(wire
 		(pts
@@ -2840,7 +3039,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 124.46) (xy 130.81 137.16)
+			(xy 130.81 124.46) (xy 130.81 132.08)
 		)
 		(stroke
 			(width 0)
@@ -2880,6 +3079,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 143.51) (xy 124.46 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a4e842c-1d48-435f-ac5e-1da76588ef86")
+	)
+	(wire
+		(pts
 			(xy 33.02 127) (xy 33.02 130.81)
 		)
 		(stroke
@@ -2900,6 +3109,26 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 132.08) (xy 130.81 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b304aad3-4248-4841-91da-dc2e9e0b0b7f")
+	)
+	(wire
+		(pts
+			(xy 130.81 132.08) (xy 130.81 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bad51ccd-10b6-4dff-81cb-08427c41e6d6")
+	)
+	(wire
+		(pts
 			(xy 33.02 130.81) (xy 46.99 130.81)
 		)
 		(stroke
@@ -2907,6 +3136,16 @@
 			(type default)
 		)
 		(uuid "baede03a-3941-43c6-b2de-5d934db91f9b")
+	)
+	(wire
+		(pts
+			(xy 130.81 148.59) (xy 130.81 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bffd09bc-744d-45b9-9b36-6672206c166d")
 	)
 	(wire
 		(pts
@@ -2947,6 +3186,16 @@
 			(type default)
 		)
 		(uuid "de6994b0-d1a9-4204-97ac-66ef5f8c722b")
+	)
+	(wire
+		(pts
+			(xy 124.46 135.89) (xy 124.46 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f98bbc03-24f1-4db0-85ec-9375185493b7")
 	)
 	(label "spi0_CLK"
 		(at 135.89 59.69 0)
@@ -3198,7 +3447,7 @@
 			(uuid "37bfc317-2f56-48d4-8d57-547c9a0f7117")
 		)
 		(instances
-			(project "utat1"
+			(project "model_rocket"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR015")
 					(unit 1)
@@ -3207,7 +3456,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "Device:C_Polarized")
 		(at 148.59 177.8 0)
 		(unit 1)
 		(body_style 1)
@@ -3217,9 +3466,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2dc9ed8c-af04-4973-9ba6-ba956424512d")
+		(uuid "252b9baa-9745-4d73-9682-4e8db7732d92")
 		(property "Reference" "C1"
-			(at 152.4 176.5299 0)
+			(at 152.4 175.6409 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3229,8 +3478,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100u"
-			(at 152.4 179.0699 0)
+		(property "Value" "100uF"
+			(at 152.4 178.1809 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3240,7 +3489,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Radial_D5.0mm_H7.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 149.5552 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -3262,7 +3511,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Polarized capacitor"
 			(at 148.59 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -3273,14 +3522,14 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "d930b73d-c71c-4205-a22b-c5108f120bd6")
-		)
 		(pin "2"
-			(uuid "8c5d14d5-c0a7-435e-a691-8d4d20176eb4")
+			(uuid "0c18237a-12f5-4cc1-8b66-1700c5fbdb22")
+		)
+		(pin "1"
+			(uuid "3a1b74bf-4e3a-435f-b26b-8a6bc34ab58a")
 		)
 		(instances
-			(project "utat1"
+			(project "model_rocket"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "C1")
 					(unit 1)
@@ -3476,7 +3725,7 @@
 			(uuid "b9dac45e-f9b7-4ed8-80a8-75f83ce89694")
 		)
 		(instances
-			(project "utat1"
+			(project "model_rocket"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "A1")
 					(unit 1)
@@ -3552,9 +3801,91 @@
 			)
 		)
 		(instances
-			(project "utat1"
+			(project "model_rocket"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 124.46 139.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3fcfafe3-9e67-49b8-9a34-98b4321b4cb1")
+		(property "Reference" "C2"
+			(at 128.27 138.4299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 128.27 140.9699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.4252 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 124.46 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fdda852c-a9f0-4dff-a7f1-036b9497ef93")
+		)
+		(pin "2"
+			(uuid "ab8bca89-4444-4af6-b737-1714cae891f9")
+		)
+		(instances
+			(project "model_rocket"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -3630,7 +3961,7 @@
 			(uuid "3897155b-4d60-438d-b7be-c78ba8ec0f16")
 		)
 		(instances
-			(project "utat1"
+			(project "model_rocket"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR02")
 					(unit 1)
@@ -3729,7 +4060,7 @@
 			(uuid "597008e7-e5f0-4ff8-b99e-37d7270ac801")
 		)
 		(instances
-			(project "utat1"
+			(project "model_rocket"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "U3")
 					(unit 1)
@@ -3805,7 +4136,7 @@
 			)
 		)
 		(instances
-			(project "utat1"
+			(project "model_rocket"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "H3")
 					(unit 1)
@@ -3883,7 +4214,7 @@
 			(uuid "dfb60f9f-7928-4764-8b2f-3dcc8769245e")
 		)
 		(instances
-			(project "utat1"
+			(project "model_rocket"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR05")
 					(unit 1)
@@ -3961,7 +4292,7 @@
 			(uuid "c2563ce8-7dbc-4891-9b74-eca5c41e2ba2")
 		)
 		(instances
-			(project "utat1"
+			(project "model_rocket"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR04")
 					(unit 1)
@@ -4054,7 +4385,7 @@
 			(uuid "8888c4b0-6c70-41f4-aacd-49da14a64c90")
 		)
 		(instances
-			(project "utat1"
+			(project "model_rocket"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "U1")
 					(unit 1)
@@ -4169,7 +4500,7 @@
 			(uuid "6c4183be-a794-4978-a6f5-af9424b4f9d7")
 		)
 		(instances
-			(project "utat1"
+			(project "model_rocket"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "BT1")
 					(unit 1)
@@ -4270,7 +4601,7 @@
 			(uuid "816c69b7-b3e4-4db1-9641-f38b4b397ab3")
 		)
 		(instances
-			(project "utat1"
+			(project "model_rocket"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "J1")
 					(unit 1)
@@ -4348,7 +4679,7 @@
 			(uuid "2fa409cf-ea76-4b6c-9ceb-0a4820a1ee42")
 		)
 		(instances
-			(project "utat1"
+			(project "model_rocket"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR07")
 					(unit 1)
@@ -4426,7 +4757,7 @@
 			(uuid "7d6d644b-373f-4042-abf5-e916b8780c63")
 		)
 		(instances
-			(project "utat1"
+			(project "model_rocket"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR010")
 					(unit 1)
@@ -4504,7 +4835,7 @@
 			(uuid "d669256b-96f1-46ac-9434-e9e34c5d30bb")
 		)
 		(instances
-			(project "utat1"
+			(project "model_rocket"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR021")
 					(unit 1)
@@ -4582,7 +4913,7 @@
 			(uuid "4ce6b975-35e5-4782-9af6-51bbc6a8d83d")
 		)
 		(instances
-			(project "utat1"
+			(project "model_rocket"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR011")
 					(unit 1)
@@ -4660,7 +4991,7 @@
 			(uuid "3a367d19-c125-46eb-a8b6-8268a7c10833")
 		)
 		(instances
-			(project "utat1"
+			(project "model_rocket"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR020")
 					(unit 1)
@@ -4736,7 +5067,7 @@
 			)
 		)
 		(instances
-			(project "utat1"
+			(project "model_rocket"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "H1")
 					(unit 1)
@@ -4814,7 +5145,7 @@
 			(uuid "87067417-ddef-4aae-a656-35a25b3f88c8")
 		)
 		(instances
-			(project "utat1"
+			(project "model_rocket"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR08")
 					(unit 1)
@@ -4892,7 +5223,7 @@
 			(uuid "4b236c1e-899d-4fc9-b40c-db083e0fa0b4")
 		)
 		(instances
-			(project "utat1"
+			(project "model_rocket"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR03")
 					(unit 1)
@@ -4970,7 +5301,7 @@
 			(uuid "5fdf8c37-c3f0-4adb-867c-724afe2e6808")
 		)
 		(instances
-			(project "utat1"
+			(project "model_rocket"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR01")
 					(unit 1)
@@ -5048,7 +5379,7 @@
 			(uuid "4ce79d49-0d85-4537-a0c0-8f04d7620113")
 		)
 		(instances
-			(project "utat1"
+			(project "model_rocket"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR014")
 					(unit 1)
