@@ -2976,10 +2976,6 @@
 		(uuid "f20d7bc3-f9a0-4b8c-8b4d-db4ad91ded3a")
 	)
 	(no_connect
-		(at 81.28 72.39)
-		(uuid "f2f6ab1c-53dd-44c7-baf7-efd55afb976f")
-	)
-	(no_connect
 		(at 135.89 80.01)
 		(uuid "f47587b6-c560-4ba6-8163-76302f0e293e")
 	)
@@ -3832,7 +3828,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "1u"
 			(at 128.27 140.9699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3843,7 +3839,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
 			(at 125.4252 143.51 0)
 			(hide yes)
 			(show_name no)
